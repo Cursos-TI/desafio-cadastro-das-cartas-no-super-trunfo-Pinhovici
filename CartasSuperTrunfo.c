@@ -18,7 +18,9 @@ int main() {
     int populacao1;
     float area1;
     float pib1;
-    int npt1; //número de pontos turísticos
+    int npt1; // número de pontos turísticos
+    float densidade1, pibcapita1, inversodensi1;
+    float superpoder1;
 
 // carta 2
 
@@ -29,6 +31,13 @@ int main() {
     float area2;
     float pib2;
     int npt2; //número de pontos turísticos
+    float densidade2, pibcapita2, inversodensi2;
+    float superpoder2;
+
+ // Comparações
+    
+    int resulpopu, resularea, resulpib, resulnpt,
+        resuldensi, resulpibcap, resuldensidem, resulsuperpoder;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -58,6 +67,12 @@ int main() {
 
         printf("\nDigite o número de pontos turísticos: \n");
         scanf("%d", &npt1);
+    
+    // Cálculos carta 1
+    
+    densidade1 = (float)populacao1 / area1;
+    pibcapita1 = pib1 / populacao1;
+    superpoder1 = populacao1 + area1 + pib1 + npt1 + pibcapita1 + inversodensi1;
 
 //configuração da segunda carta
 
@@ -83,6 +98,16 @@ int main() {
 
         printf("\nDigite o número de pontos turísticos: \n");
         scanf("%d", &npt2);
+
+        // Cálculos carta 2
+    densidade2 = (float)populacao2 / area2;
+    pibcapita2 = pib2 / populacao2;
+    superpoder2 = populacao2 + area2 + pib2 + npt2 + pibcapita2 + inversodensi2;
+    
+      // Exibição dos Dados das Cartas:
+    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
+    // Exiba os valores inseridos para cada atributo da cidade, um por linha.  
+    
     //carta 1
 
         printf("\n Primeira carta: \n");
@@ -103,9 +128,7 @@ int main() {
         printf("População: %d\n", populacao2);
         printf("PIB: %.2f", pib2);
 
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
 
     return 0;
 }
