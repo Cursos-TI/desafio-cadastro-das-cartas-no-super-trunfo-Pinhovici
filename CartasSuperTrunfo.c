@@ -10,7 +10,7 @@ int main (){
     float area1;
     float pib1;
     int npt1; // número de pontos turísticos
-    float densidade1, pibcapita1, inversodensi1;
+    float densidade1, pibcapita1;
     float superpoder1;
 
     // Carta 2
@@ -21,7 +21,7 @@ int main (){
     float area2;
     float pib2;
     int npt2; // número de pontos turísticos
-    float densidade2, pibcapita2, inversodensi2;
+    float densidade2, pibcapita2;
     float superpoder2;
 
     // Comparações
@@ -88,12 +88,12 @@ int main (){
 
     // Comparações
     resularea      = area1 > area2;
-    resuldensi     = densidade1 > densidade2;
+    resuldensi     = densidade1 < densidade2;
     resulnpt       = npt1 > npt2;
     resulpib       = pib1 > pib2;
     resulpibcap    = pibcapita1 > pibcapita2;
     resulpopu      = populacao1 > populacao2;
-    resuldensidem  = inversodensi1 > inversodensi2;
+    resuldensidem  = inversodensi1 > inversodensi2; //inverso da densidade
     resulsuperpoder= superpoder1 > superpoder2;
 
     // Exibição das cartas
@@ -104,7 +104,7 @@ int main (){
     printf("Área total: %.2f km²\n", area1);
     printf("População: %d\n", populacao1);
     printf("PIB: %.2f\n", pib1);
-    printf("Densidade demográfica: %.3f hab/km²\n", densidade1);
+    printf("Densidade populacional: %.3f hab/km²\n", densidade1);
     printf("PIB per capita: %.3f\n", pibcapita1);
     printf("Super Poder: %.3f\n", superpoder1);
 
@@ -115,7 +115,7 @@ int main (){
     printf("Área total: %.2f km²\n", area2);
     printf("População: %d\n", populacao2);
     printf("PIB: %.2f\n", pib2);
-    printf("Densidade demográfica: %.3f hab/km²\n", densidade2);
+    printf("Densidade populacional: %.3f hab/km²\n", densidade2);
     printf("PIB per capita: %.3f\n", pibcapita2);
     printf("Super Poder: %.3f\n", superpoder2);
 
@@ -126,7 +126,7 @@ int main (){
     printf("PIB: %d\n", resulpib);
     printf("Nº de pontos turísticos: %d\n", resulnpt);
     printf("PIB per capita: %d\n", resulpibcap);
-    printf("Densidade demográfica: %d\n", resuldensidem); //menor é melhor
+    printf("Densidade populacional: %d\n", resuldensidem); //menor é melhor
     printf("Super Poder total: %d\n", resulsuperpoder);
 
     return 0;
