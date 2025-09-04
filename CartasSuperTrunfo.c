@@ -34,22 +34,22 @@ int main (){
     printf("\nDigite o nome do estado: ");
     scanf("%49s", Estado1);
 
-    printf("Digite o código da carta: ");
+    printf("\nDigite o código da carta: ");
     scanf("%49s", codigocarta1);
 
-    printf("Digite o nome da cidade: ");
+    printf("\nDigite o nome da cidade: ");
     scanf("%49s", nomecidade1);
 
-    printf("Digite a população: ");
+    printf("\nDigite a população: ");
     scanf("%d", &populacao1);
 
-    printf("Digite a área (km²): ");
+    printf("\nDigite a área (km²): ");
     scanf("%f", &area1);
 
-    printf("Digite o PIB: ");
+    printf("\nDigite o PIB: ");
     scanf("%f", &pib1);
 
-    printf("Digite o número de pontos turísticos: ");
+    printf("\nDigite o número de pontos turísticos: ");
     scanf("%d", &npt1);
 
     // Cálculos carta 1
@@ -63,22 +63,22 @@ int main (){
     printf("\nDigite o nome do estado: ");
     scanf("%49s", Estado2);
 
-    printf("Digite o código da carta: ");
+    printf("\nDigite o código da carta: ");
     scanf("%49s", codigocarta2);
 
-    printf("Digite o nome da cidade: ");
+    printf("\nDigite o nome da cidade: ");
     scanf("%49s", nomecidade2);
 
-    printf("Digite a população: ");
+    printf("\nDigite a população: ");
     scanf("%d", &populacao2);
 
-    printf("Digite a área (km²): ");
+    printf("\nDigite a área (km²): ");
     scanf("%f", &area2);
 
-    printf("Digite o PIB: ");
+    printf("\nDigite o PIB: ");
     scanf("%f", &pib2);
 
-    printf("Digite o número de pontos turísticos: ");
+    printf("\nDigite o número de pontos turísticos: ");
     scanf("%d", &npt2);
 
     // Cálculos carta 2
