@@ -12,7 +12,8 @@ int main (){
     int npt1; // número de pontos turísticos
     float densidade1, pibcapita1;
     float superpoder1;
-
+    float inversodensidade1;
+    
     // Carta 2
     char Estado2[50];
     char codigocarta2[50];
@@ -23,6 +24,7 @@ int main (){
     int npt2; // número de pontos turísticos
     float densidade2, pibcapita2;
     float superpoder2;
+    float inversodensidade2;
 
     // Comparações
     int resulpopu, resularea, resulpib, resulnpt,
@@ -55,7 +57,10 @@ int main (){
     // Cálculos carta 1
     densidade1 = (float)populacao1 / area1;
     pibcapita1 = pib1 / populacao1;
-    superpoder1 = populacao1 + area1 + pib1 + npt1 + pibcapita1 + inversodensi1;
+    inversodensidade1 = 1 / densidade1;
+
+    superpoder1 = (float)populacao1 + area1 + pib1 + (float)npt1 + pib_per_capita1 + inversodensidade1;
+    
 
     // Configuração da segunda carta
     printf("\nExcelente! Agora configure a segunda carta:\n");
@@ -84,7 +89,8 @@ int main (){
     // Cálculos carta 2
     densidade2 = (float)populacao2 / area2;
     pibcapita2 = pib2 / populacao2;
-    superpoder2 = populacao2 + area2 + pib2 + npt2 + pibcapita2 + inversodensi2;
+    inversodensidade2 = 1 / densidade2;
+    superpoder2 = (float)populacao2 + area2 + pib2 + (float)npt2 + pib_per_capita2 + inversodensidade2;
 
     // Comparações
     resularea      = area1 > area2;
